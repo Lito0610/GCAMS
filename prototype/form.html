@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GCAMS - Schedule Appointment Modal">
+  <title>Schedule Appointment &mdash; GCAMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell" aria-hidden="true">
+    <aside class="sidebar">
+      <a class="brand" href="list.html">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>GCAMS<small>Guidance &amp; Counseling</small></span>
+      </a>
+
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">O</span>Overview
+        </a>
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">S</span>Students
+          <b class="nav-count"></b>
+        </a>
+        <a class="nav-item active" href="list.html">
+          <span class="nav-icon">A</span>Appointments
+        </a>
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">R</span>Referrals
+          <b class="alert-badge nav-count"></b>
+        </a>
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">C</span>Concern reports
+        </a>
+      </nav>
+
+      <div class="workspace-label">MANAGE</div>
+      <nav class="main-nav" aria-label="Management navigation">
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">H</span>History
+        </a>
+        <a class="nav-item disabled" href="#">
+          <span class="nav-icon">R</span>Risk rules
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="help-icon">?</span>
+          <span>
+            <strong>Need a hand?</strong>
+            <small>View system guide</small>
+          </span>
+          <span class="arrow">&nearr;</span>
+        </div>
+
+        <div class="profile">
+          <div class="avatar">MC</div>
+          <div class="profile-info">
+            <strong>Maria Clara</strong>
+            <small>Guidance Counselor</small>
+          </div>
+          <button class="logout-button" type="button">Log out</button>
+          <span class="more">&hellip;</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumbs">
+          Workspace <span>/</span> <strong>Appointments</strong>
+        </div>
+        <div class="top-actions">
+          <button class="icon-button" type="button" aria-label="Search">&#9021;</button>
+          <button class="icon-button notification" type="button" aria-label="Notifications">
+            !<i></i>
+          </button>
+          <div class="top-avatar">MC</div>
+        </div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="page-heading">
+          <div>
+            <p class="eyebrow">COUNSELOR WORKSPACE</p>
+            <h1>Appointments</h1>
+            <p class="subheading">Set schedules, record outcomes, and keep students informed.</p>
+          </div>
+          <button class="primary-btn" type="button">&plus; Schedule appointment</button>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <a href="list.html" class="modal-backdrop" aria-label="Close modal"></a>
+
+    <section class="modal-card">
+      <a href="list.html" class="modal-close" aria-label="Close">&times;</a>
+
+      <h2 id="modalTitle">Schedule appointment</h2>
+      <p class="intro">The student may visit the Guidance Office at any time during office hours on this date.</p>
+
+      <form action="#" method="post" class="modal-form">
+        <input type="hidden" name="status" value="scheduled">
+
+        <div class="modal-field">
+          <label for="student_number">Student number</label>
+          <input
+            id="student_number"
+            name="student_id"
+            type="text"
+            placeholder="Enter student number"
+            required
+          >
+          <small class="field-help">Enter the student number to find the student automatically.</small>
+        </div>
+
+        <div class="modal-field">
+          <label for="student_name">Student name</label>
+          <input
+            id="student_name"
+            name="student_name"
+            type="text"
+            placeholder="Student name"
+          >
+        </div>
+
+        <div class="modal-field date-field">
+          <label for="appointment_date">Date</label>
+          <input
+            id="appointment_date"
+            name="appointment_date"
+            type="date"
+            required
+          >
+        </div>
+
+        <div class="modal-field">
+          <label for="concern_type">Concern type</label>
+          <select id="concern_type" name="concern_type" required>
+            <option value="academic" selected>Academic concern</option>
+            <option value="personal">Personal concern</option>
+            <option value="career">Career planning</option>
+            <option value="financial">Financial concern</option>
+            <option value="mental health">Mental health</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="modal-actions">
+          <a href="list.html" class="btn-cancel">Cancel</a>
+          <button type="submit" class="btn-save">
+            Save and notify<br>student
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
