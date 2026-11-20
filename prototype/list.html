@@ -1,190 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GCAMS - Guidance Counseling Appointments List">
-  <title>Appointments &mdash; GCAMS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div class="app-shell">
-    <aside class="sidebar">
-      <a class="brand" href="list.html">
-        <span class="brand-mark">+</span>
-        <span>GCAMS<small>Guidance &amp; Counseling</small></span>
-      </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GCAMS - Guidance Counseling Appointments List"
+    />
+    <title>Appointments &mdash; GCAMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="list.html">
+          <span class="brand-mark">+</span>
+          <span>GCAMS<small>Guidance &amp; Counseling</small></span>
+        </a>
 
-      <div class="workspace-label">WORKSPACE</div>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">O</span>Overview
-        </a>
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">S</span>Students
-          <b class="nav-count"></b>
-        </a>
-        <a class="nav-item active" href="list.html">
-          <span class="nav-icon">A</span>Appointments
-        </a>
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">R</span>Referrals
-          <b class="alert-badge nav-count"></b>
-        </a>
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">C</span>Concern reports
-        </a>
-      </nav>
+        <div class="workspace-label">WORKSPACE</div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">O</span>Overview
+          </a>
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">S</span>Students
+            <b class="nav-count"></b>
+          </a>
+          <a class="nav-item active" href="list.html">
+            <span class="nav-icon">A</span>Appointments
+          </a>
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">R</span>Referrals
+            <b class="alert-badge nav-count"></b>
+          </a>
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">C</span>Concern reports
+          </a>
+        </nav>
 
-      <div class="workspace-label">MANAGE</div>
-      <nav class="main-nav" aria-label="Management navigation">
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">H</span>History
-        </a>
-        <a class="nav-item disabled" href="#">
-          <span class="nav-icon">R</span>Risk rules
-        </a>
-      </nav>
+        <div class="workspace-label">MANAGE</div>
+        <nav class="main-nav" aria-label="Management navigation">
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">H</span>History
+          </a>
+          <a class="nav-item disabled" href="#">
+            <span class="nav-icon">R</span>Risk rules
+          </a>
+        </nav>
 
-      <div class="sidebar-bottom">
-        <div class="help-card">
-          <span class="help-icon">?</span>
-          <span>
-            <strong>Need a hand?</strong>
-            <small>View system guide</small>
-          </span>
-          <span class="arrow">&nearr;</span>
-        </div>
-
-        <div class="profile">
-          <div class="avatar">MC</div>
-          <div class="profile-info">
-            <strong>Maria Clara</strong>
-            <small>Guidance Counselor</small>
+        <div class="sidebar-bottom">
+          <div class="help-card">
+            <span class="help-icon">?</span>
+            <span>
+              <strong>Need a hand?</strong>
+              <small>View system guide</small>
+            </span>
+            <span class="arrow">&nearr;</span>
           </div>
-          <button class="logout-button" type="button">Log out</button>
-          <span class="more">&bull;&bull;&bull;</span>
-        </div>
-      </div>
-    </aside>
 
-    <main class="main-content">
-      <header class="topbar">
-        <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="breadcrumbs">
-          Workspace <span>/</span> <strong>Appointments</strong>
+          <div class="profile">
+            <div class="avatar">MC</div>
+            <div class="profile-info">
+              <strong>Maria Clara</strong>
+              <small>Guidance Counselor</small>
+            </div>
+            <button class="logout-button" type="button">Log out</button>
+            <span class="more">&bull;&bull;&bull;</span>
+          </div>
         </div>
-        <div class="top-actions">
-          <button class="icon-button" type="button" aria-label="Search">&#9021;</button>
-          <button class="icon-button notification" type="button" aria-label="Notifications">
-            !<i></i>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button
+            class="mobile-menu-toggle"
+            type="button"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span><span></span><span></span>
           </button>
-          <div class="top-avatar">MC</div>
+          <div class="breadcrumbs">
+            Workspace <span>/</span> <strong>Appointments</strong>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" type="button" aria-label="Search">
+              &#9021;
+            </button>
+            <button
+              class="icon-button notification"
+              type="button"
+              aria-label="Notifications"
+            >
+              !<i></i>
+            </button>
+            <div class="top-avatar">MC</div>
+          </div>
+        </header>
+
+        <div class="page-wrap">
+          <section class="page-heading">
+            <div>
+              <p class="eyebrow">COUNSELOR WORKSPACE</p>
+              <h1>Appointments</h1>
+              <p class="subheading">
+                Set schedules, record outcomes, and keep students informed.
+              </p>
+            </div>
+            <a href="form.html" class="primary-btn"
+              >&plus; Schedule appointment</a
+            >
+          </section>
+
+          <div class="toolbar">
+            <div class="search-input">
+              &#9021;
+              <input
+                type="search"
+                placeholder="Search appointments..."
+                aria-label="Search appointments"
+              />
+            </div>
+          </div>
+
+          <div class="data-card" aria-label="Appointments list">
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">Maria Santos (BSIT &middot; 3B)</div>
+                <div class="item-meta">
+                  Academic concern &middot; 2026-11-25 09:00 AM &middot;
+                  <strong>scheduled</strong>
+                  <em class="workflow-source">Student request</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">John Cruz (BSCS &middot; 2A)</div>
+                <div class="item-meta">
+                  Mental health concern &middot; 2026-11-26 02:00 PM &middot;
+                  <strong>requested</strong>
+                  <em class="workflow-source">Student request</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">Ana Reyes (BSIT &middot; 4A)</div>
+                <div class="item-meta">
+                  Career planning &middot; 2026-11-27 10:30 AM &middot;
+                  <strong>scheduled</strong>
+                  <em class="workflow-source">Counselor scheduled</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">Carlos Mendoza (BSEMC &middot; 2B)</div>
+                <div class="item-meta">
+                  Personal concern &middot; 2026-11-24 03:00 PM &middot;
+                  <strong>completed</strong>
+                  <em class="workflow-source">Counselor scheduled</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">Sofia Garcia (BSIT &middot; 1A)</div>
+                <div class="item-meta">
+                  Financial concern &middot; 2026-11-28 11:00 AM &middot;
+                  <strong>requested</strong>
+                  <em class="workflow-source">Student request</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+
+            <div class="list-item">
+              <div class="icon-box violet-bg">▣</div>
+              <div>
+                <div class="item-title">Miguel Torres (BSCS &middot; 3A)</div>
+                <div class="item-meta">
+                  Academic concern &middot; 2026-11-29 01:30 PM &middot;
+                  <strong>scheduled</strong>
+                  <em class="workflow-source">Counselor scheduled</em>
+                </div>
+              </div>
+              <button class="ghost-btn">Mark as completed</button>
+              <button class="outline-btn" type="button">Cancel</button>
+            </div>
+          </div>
         </div>
-      </header>
-
-      <div class="page-wrap">
-        <section class="page-heading">
-          <div>
-            <p class="eyebrow">COUNSELOR WORKSPACE</p>
-            <h1>Appointments</h1>
-            <p class="subheading">Set schedules, record outcomes, and keep students informed.</p>
-          </div>
-          <a href="form.html" class="primary-btn">&plus; Schedule appointment</a>
-        </section>
-
-        <div class="toolbar">
-          <div class="search-input">
-            &#9021; <input type="search" placeholder="Search appointments..." aria-label="Search appointments">
-          </div>
-        </div>
-
-        <div class="data-card" aria-label="Appointments list">
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">Maria Santos (BSIT &middot; 3B)</div>
-              <div class="item-meta">
-                Academic concern &middot; 2026-11-25 09:00 AM &middot; <strong>scheduled</strong>
-                <em class="workflow-source">Student request</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">John Cruz (BSCS &middot; 2A)</div>
-              <div class="item-meta">
-                Mental health concern &middot; 2026-11-26 02:00 PM &middot; <strong>requested</strong>
-                <em class="workflow-source">Student request</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">Ana Reyes (BSIT &middot; 4A)</div>
-              <div class="item-meta">
-                Career planning &middot; 2026-11-27 10:30 AM &middot; <strong>scheduled</strong>
-                <em class="workflow-source">Counselor scheduled</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">Carlos Mendoza (BSEMC &middot; 2B)</div>
-              <div class="item-meta">
-                Personal concern &middot; 2026-11-24 03:00 PM &middot; <strong>completed</strong>
-                <em class="workflow-source">Counselor scheduled</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">Sofia Garcia (BSIT &middot; 1A)</div>
-              <div class="item-meta">
-                Financial concern &middot; 2026-11-28 11:00 AM &middot; <strong>requested</strong>
-                <em class="workflow-source">Student request</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-
-          <div class="list-item">
-            <div class="icon-box violet-bg">▣</div>
-            <div>
-              <div class="item-title">Miguel Torres (BSCS &middot; 3A)</div>
-              <div class="item-meta">
-                Academic concern &middot; 2026-11-29 01:30 PM &middot; <strong>scheduled</strong>
-                <em class="workflow-source">Counselor scheduled</em>
-              </div>
-            </div>
-            <a href="form.html" class="ghost-btn">Edit</a>
-            <button class="outline-btn" type="button">Delete</button>
-          </div>
-        </div>
-      </div>
-    </main>
-  </div>
-</body>
+      </main>
+    </div>
+  </body>
 </html>
